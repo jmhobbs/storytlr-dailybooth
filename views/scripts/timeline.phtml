@@ -1,0 +1,9 @@
+<?php $item 	= $this->item->toArray(); ?>
+<div class="dailybooth">
+	<div  class="content"><a href="<?= $item['link']; ?>" title="<?= $item['title']; ?>" target="_blank"><img src="<?= $this->item->getImageURL('large'); ?>" /></a></div>
+	<?php if ($item['description']) : ?>
+		<div class="note">
+			<?= $item['description']; ?>
+		</div>
+	<?php endif ?>
+</div>
